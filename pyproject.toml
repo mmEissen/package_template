@@ -32,7 +32,7 @@ commands =
     black package_template tests {tty::--diff}
     flake8 package_template tests --max-line-length=88
 
-[testenv:typing]
+[testenv:typecheck]
 extras =
     typecheck
 commands =
