@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "service_template"
+name = "package_template"
 version = "0.1.0"
-description = "A basic service template"
+description = "A basic package template"
 authors = []
 
 [tool.poetry.dependencies]
@@ -29,14 +29,14 @@ envlist = lint,typecheck,test
 extras =
     lint
 commands =
-    black service_template tests {tty::--diff}
-    flake8 service_template tests --max-line-length=88
+    black package_template tests {tty::--diff}
+    flake8 package_template tests --max-line-length=88
 
 [testenv:typing]
 extras =
     typecheck
 commands =
-    mypy service_template
+    mypy package_template
 
 [testenv:test]
 extras =
